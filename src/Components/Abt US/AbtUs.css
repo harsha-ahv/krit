@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  background-image: url(../images/Rectangle\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background: #0000003b;
+  position: relative;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.navbar nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.4s ease-in;
+}
+
+.navbar nav li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #53affb;
+  text-decoration-thickness: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+ 
+  width: 100%;
+
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(45, 17, 17, 0.515);
+  padding: 25px;
+}
+
+.content h2 {
+  font-size: 4.5rem;
+  color: #fff;
+  font-family: "ubuntu", sans-serif;
+}
+
+.content p {
+  color: #fff;
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+.content button {
+  display: block;
+  margin: 2rem 0;
+  width: 21%;
+  padding: 0.7rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: inherit;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.content button:hover,
+i:hover {
+  background: #483535;
+}
+
+.navbar .btn {
+  font-size: 1.2rem;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1058px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  .content h2 {
+    font-size: 4rem;
+  }
+
+  .navbar nav li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 902px) {
+  .navbar .btn {
+    display: block;
+  }
+
+  .navbar nav {
+    position: fixed;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 50vh;
+    top: 0;
+    right: -100%;
+    background: transparent;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .navbar nav.active {
+    right: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar nav li {
+    margin: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    margin: 25px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(45, 17, 17);
+    padding: 30px;
+  }
+
+  .content h2 {
+    font-size: 3.5rem;
+  }
+
+  .content button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 562px) {
+  .content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Team Section */
+
+.team {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.team h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 18rem;
+  height: 24rem;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-1 {
+  background-image: url("https://www.1800flowers.com/blog/wp-content/uploads/2024/01/february-birth-flowers-violets-1.jpg.webp");
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.card-2 {
+  background-image: url("https://www.almanac.com/sites/default/files/users/AlmanacStaffArchive/aster-1763068_1920_full_width.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-3 {
+  background-image: url("https://www.almanac.com/sites/default/files/styles/or/public/image_nodes/lily-of-the-valley-sun.jpg?itok=lJUmbF86");
+  background-position: top right;
+  background-size: cover;
+}
+
+.card-4 {
+    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg");
+    background-position: top right;
+    background-size: cover;
+  }
+
+.card-info {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), black);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-info button {
+  margin: 15px 10px;
+}
+
+.card-name {
+  font-size: 2rem;
+  margin: 0px 10px;
+  color: #F1FADA;
+}
+
+.card-role {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.card-email {
+  font-size: 1rem;
+  margin: 0px 10px;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  margin: 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #010101;
+  text-align: center;
+  cursor: pointer;
+  width: 94%;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3f2724;
+}
+
+/* Footer */
+footer {
+  height:90px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+h1{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px;
+}

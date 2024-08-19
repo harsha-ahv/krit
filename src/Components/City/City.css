@@ -1,0 +1,168 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-image: url(../images/Rectangle\ 2.jpg);
+    color: #ffffff;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 10vh 1.5vw;
+  }
+  
+  .header h1, .header h2 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .header h2 {
+    font-size: 0.875rem;
+    font-weight: normal;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .header h1 {
+      font-size: 3.75rem;
+    }
+    .header h2 {
+      font-size: 1.125rem;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .header h1 {
+      font-size: 6rem;
+    }
+    .header h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .content {
+    padding: 1.5vw;
+  }
+  
+  .intro, .significance, .key-events, .tourist-info {
+    margin-bottom: 2rem;
+  }
+
+  .intro{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap
+  }
+  .lal{
+    width:30vw;
+    background-color: rgba(45, 45, 45, 0.648);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display:flex;
+
+  }
+  .lala{
+    width: 60vw;
+    background-color: rgba(55, 31, 22, 0.648);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display:flex;
+
+  }
+ 
+ .key li{
+  text-align: center;
+   display: inline-block;
+ }
+
+  .key-events{
+    float: right;
+    width:90vw;
+    background-color: rgba(55, 31, 22, 0.648);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .tourist-info{
+    width:90vw;
+    background-color: rgba(55, 31, 22, 0.648);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  .trst{
+    display: flex;
+    justify-content: space-around
+  }
+  .safety-measures{
+    width:80vw;
+    background-color: rgba(55, 31, 22, 0.648);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+ 
+  }
+  .recommended-places{
+    width:80vw;
+    background-color: rgba(55, 31, 22, 0.42);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+
+  button {
+    background-color: #000000; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block element */
+    font-size: 16px; /* Increase font size */
+    margin: 5px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 5px; /* Rounded corners */
+    transition-duration: 0.4s; /* 0.4 seconds transition effect to hover state */
+  }
+  
+  button:hover {
+    background-color: #005f6a; /* Darker blue on hover */
+    color: white; /* White text */
+  }
